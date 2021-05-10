@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    function isFibonacci(n) {
+        let F1 = 0;
+        let F2 = 1;
+        let F = 1;
+        let isFibonacci = true;
+        while (isFibonacci) {
+            if (F == n) {
+                return true;
+            }
+            if (F > n) {
+                return false;
+            }
+            F = F1 + F2;
+            F1 = F2;
+            F2 = F;
+
+        }
+    }
+
+    alert(isFibonacci(13));
+
+</script>
+</body>
+</html>
