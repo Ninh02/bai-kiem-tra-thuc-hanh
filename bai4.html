@@ -15,7 +15,7 @@
             this.color = color;
         }
 
-        draw() {
+        render() {
             let canvas = document.getElementById("myCanvas");
             let pen = canvas.getContext('2d');
             pen.beginPath();
@@ -27,7 +27,7 @@
     }
 
     let circle = new Circle(10, 10, 100, '#000000');
-    circle.draw();
+    circle.render();
 </script>
 </body>
 </html>
